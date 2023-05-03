@@ -1,0 +1,28 @@
+import pandas as pd
+
+dataset = pd.read_csv(r'filepath')
+
+print("Top 5 Entries")
+print(dataset.head())
+print()
+
+print("Bottom 5 Entries")
+print(dataset.tail())
+print()
+
+print("Info")
+print(dataset.info())
+print()
+
+print("Row Count")
+print(dataset.shape[0])
+print()
+
+print("Dataset Stats")
+print(dataset.describe())
+print()
+
+#Checking for duplicate values
+print('Duplicate Values')
+print(dataset.duplicated())
+print()
