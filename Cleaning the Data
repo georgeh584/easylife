@@ -1,0 +1,16 @@
+print("Drop Duplicates")
+print(dataset.drop_duplicates())
+print()
+
+print("Drop Nulls")
+print(dataset.dropna())
+print()
+
+norm = preprocessing.normalize(df)
+data = pd.DataFrame(norm)
+print('Normalising the data')
+print(dataset)
+
+print('Shuffling Data')
+clean_dataset = shuffle(dataset)
+print(clean_dataset)
